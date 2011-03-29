@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+/* ------------------------------
+- Title: Project X Main Stylesheet (http://projectsite.com)
+- Author: John Doe (http://koombea.com)
+
+----- Table of Contents -----
+
+	1. Helpers
+	2. General
+	3. Header
+	4. Content
+	5. Footer
+	6. Forms
+	7. Tables
+	8. Buttons
+	9. Icons
+		
+------------------------------ */
+
+/* Helpers
+============================================================ */
+.clearfix:after{ 
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden; 
+}
+.clearfix{display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+.clear{clear:left;}
+
+.floatleft{float:left !important;}
+.floatright{float:right !important;}
+.floatcenter{
+  float:none !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	overflow:hidden;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+/* General
+============================================================ */
+html,
+body{height:100%;}
+
+body{
+
+}
+
+#wrapper{
+   /* Stick footer to bottom - remove if not used  */
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin:0 auto -40px; /* margin-bottom should be equal to the footer height */
+  /* */
+  width:960px;
+}
+
+p{
+  
+}
+
+a{
+	
+}
+
+a:hover{
+	
+}
+
+/* Header
+============================================================ */
+
+
+/* Content
+============================================================ */
+#content{
+  padding-bottom:40px; /* This should be equal to the footer height - remove if not used  */
+}
+
+
+/* Footer
+============================================================ */
+#footer{
+  height:40px;
+}
+
+/* Forms
+============================================================ */
+
+
+/* Tables
+============================================================ */
+
+
+/* Buttons
+============================================================ */
+
+
+/* Icons
+============================================================ */
