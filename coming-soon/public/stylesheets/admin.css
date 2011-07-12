@@ -1,0 +1,62 @@
+/*
+- Copyright (c) 2010, Koombea, Inc All rights reserved.
+- Version: 1.0       
+
+
+----- Table of Contents -----
+
+1. General Classes
+2. Body
+4. Header
+5. Content
+6. Footer
+
+-------------------------------
+*/
+/* General Classes
+============================================================  */
+* html .clearfix{height:1%;}
+.fleft{float:left;}
+
+/* Body
+============================================================  */
+body{color:#464646;font-family:Arial, Helvetica, sans-serif;font-size: 11px;}
+#wrapper{margin:0 auto;width:850px;}
+a{color:#30A4B1;}
+a:hover{color:#666;}
+span.total{display: inline-block;font-size: 13px;font-weight: bold;margin-bottom: 5px;}
+span.bigtotal{display: inline-block;font-size: 15px;font-weight: bold;margin-bottom: 10px;}
+
+/* Header
+============================================================  */
+#header{margin-bottom:20px;margin-top:20px;overflow:hidden;}
+#header h1{float:left;font-size:20px;font-weight:700;letter-spacing:-1px;}
+#header ul#session li{float:left;margin-left:10px;}
+#header ul#menu{background-color:#464646;float:left;height:54px;width:100%;}
+#header ul#menu li a{color:#FFF;float:left;padding:20px;text-decoration:none;}
+#header ul#menu li a:hover,#header ul#menu li.selected a{background-color:#30A4B1;}
+
+/* Content
+============================================================  */
+#content{background-color:#FFF;overflow:hidden;}
+#content h1{font-size:14px;font-weight:700;margin-bottom:10px;}
+#content p{font-size:1.2em;}
+#content #left{float:left;width:615px;}
+#content #sidebar{background-color:#F7F7F7;float:right;padding:10px;width:200px;}
+form{margin-top:20px;}
+table{border:1px solid #B9B9B9;}
+table th{background-color:#D9D7D8;font-size:1.2em;font-weight:700;padding:10px;text-align: left;}
+table tr{border-bottom:1px solid #B9B9B9;}
+table td{font-size:1em;padding:10px;}
+table tr.odd td{background-color:#F7F7F7;font-size:1em;padding:10px;}
+
+/* Footer
+============================================================  */
+#footer{margin-bottom:40px;margin-top:20px;}
+
+/* Flashes & Errors
+============================================================  */
+.error,.notice{margin-bottom:10px;margin-top:10px;padding:10px 10px 10px 40px;}
+.error{background:#FFB4B7;border:thin solid #FD2F2F;}
+.notice{background:#B1FEB0;border:thin solid #21FD31;}
+.fright,#header ul#session{float:right;}

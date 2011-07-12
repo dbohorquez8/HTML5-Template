@@ -1,0 +1,6 @@
+- if (@folder == 'usuario' and @slide.to_i < 14) or (@folder == 'empresas' and @slide.to_i < 12) or (@folder == 'admin' and @slide.to_i < 8)
+  %a{:href => "/#{@folder}/#{@slide.to_i + 1}"}
+    %img{:src => "/images/slides/#{@folder}/#{@slide}.png", :alt => ""}
+- else
+  %a{:href => "/"}
+    %img{:src => "/images/slides/#{@folder}/#{@slide}.png", :alt => ""}

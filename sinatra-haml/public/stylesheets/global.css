@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+/* -----------------------------------------------------------
+
+- Title: Project X Main Stylesheet
+- Author: John Doe (http://koombea.com)		
+
+----------------------------------------------------------- */
+
+/* Helpers
+============================================================ */
+.clearfix:after{ 
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden; 
+}
+.clearfix{display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+.clear{clear:left;}
+
+.floatleft{float:left !important;}
+.floatright{float:right !important;}
+.floatcenter{
+  float:none !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	overflow:hidden;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+/* General
+============================================================ */
+body{
+
+}
+
+#wrapper{
+
+}
+
+p{
+  
+}
+
+a{
+	
+}
+
+a:hover{
+	
+}
+
+/* Header
+============================================================ */
+#header{
+  
+}
+
+/* Content
+============================================================ */
+#content{
+
+}
+
+
+/* Footer
+============================================================ */
+#footer{
+  
+}
+
+/* Forms
+============================================================ */
+
+
+/* Tables
+============================================================ */
+
+
+/* Buttons
+============================================================ */
+
+
+/* Icons
+============================================================ */

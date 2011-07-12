@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+/* ------------------------------
+- Title: Project Presentation Stylesheet
+- Author: David Bohórquez (http://koombea.com)
+------------------------------ */
+
+html,
+body{height:100%;}
+
+body{
+  background:url(../images/header.png) repeat-x top;
+  font-family:"Trebuchet MS", Tahoma, Arial, sans-serif;
+  font-size:20px;
+}
+
+ul{padding:80px 0;}
+
+li{
+  display:inline;
+  margin:0 30px;
+}
+
+a{
+  color:#933;
+  text-decoration:none;
+  text-shadow:0 1px 1px rgba(0,0,0,0.2);
+}
+
+a:hover{text-decoration:underline;}
+
+#wrapper{
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin:0 auto -268px;
+  width:1280px;
+}
+
+#content{
+  text-align:center;
+  padding-bottom:268px;
+}
+
+#content
+
+#footer{
+  background:url(../images/footer.png) no-repeat bottom;
+  height:268px;
+}

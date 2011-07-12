@@ -1,0 +1,18 @@
+source :gemcutter
+gem "sinatra"
+gem "dm-core"
+gem "dm-validations"
+gem "dm-aggregates"
+gem "dm-migrations"
+gem "dm-serializer"
+gem "sinatra-redirect-with-flash", :require => 'sinatra/redirect_with_flash'
+gem "haml"
+gem "fastercsv"
+
+group :development do
+  gem "dm-sqlite-adapter"
+end
+
+group :production do
+	gem "dm-postgres-adapter"
+end

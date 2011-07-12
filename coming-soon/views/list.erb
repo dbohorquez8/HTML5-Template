@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Admin: <%= AppConfig['app_name']%></title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/reset.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../stylesheets/admin.css" media="screen" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><%= AppConfig['app_name']%></h1>
+		</div>
+
+		<% if flash.has?('error') || flash.has?('notice') %>
+		<div class="<%= flash.has?('error') ? 'error' : 'notice' %>">
+			<%= flash.has?('error') ? flash[:error] : flash[:notice] %>
+		</div>
+		<% end %>
+
+		<div id="content">
+			<div id="left">
+				<table width="100%">
+					<tr>
+						<th>Correo Electronico</th>
+						<th>Tipo</th>
+						<th>Fecha de Registro</th>
+					</tr>
+					<%@emails.each do |email|%>
+					<tr class=''>
+						<td><%=email.email%></td>
+						<td><%=email.type_user%></td>
+						<td><%=email.created_at.strftime("%B %d, %Y, %I:%M:%S %p")%></td>
+					</tr>
+					<%end%>
+
+				</table>
+			</div>
+
+			<div id="sidebar">
+				<span class="bigtotal">Total registrados: <%= @email_count%></span><br/>
+				<span class="total">Total Personas: <%= @personas%></span><br/>
+				<span class="total">Total Empresas: <%= @email_count - @personas%></span><br/><br/>
+
+				<a href='/export_csv'>export csv</a>
+			</div>
+		</div>
+
+		<div id="footer">
+			<p>Todos los derechos reservados. Copyright © 2011 El Herealdo.</p>
+		</div>
+	</div>
+</body>
+
+</html>

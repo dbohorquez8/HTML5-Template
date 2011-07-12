@@ -1,0 +1,30 @@
+!!! 5
+%html.no-js{:lang => "en"}
+
+  %head
+    %meta{:charset => "utf-8"}/
+    /[if IE]
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %title Empleos - ElHeraldo.co
+    %link{:rel => "stylesheet", :href => "/stylesheets/global.css"}
+    %script{:src => "/javascripts/modernizr.js"}
+
+  <!--[if lte IE 7 ]> <body class="ie8 ie7"> <![endif]-->
+  <!--[if IE 8 ]> <body class="ie8"> <![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+  #wrapper
+    %header#header
+
+    #content
+      = yield
+    
+  %footer#footer
+  
+  %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"}
+  %script window.jQuery || document.write('<script src="/javascripts/jquery.js">\x3C/script>')
+
+  /[if (gte IE 6)&(lte IE 8)]
+    %script{:src => "/javascripts/selectivizr.js"}
+
+  %script{:src => "/javascripts/application.js"}
+  </body>
