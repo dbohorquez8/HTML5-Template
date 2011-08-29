@@ -10,17 +10,10 @@
 
 /* Helpers
 ============================================================ */
-.clearfix:after{ 
-  content:"."; 
-  display:block; 
-  height:0; 
-  clear:both; 
-  visibility:hidden; 
-}
-.clearfix{display:inline-block;}
-/* Hides from IE-mac \*/
-* html .clearfix{height:1%;}
-.clearfix{display:block;}
+.clearfix:before,
+.clearfix:after{content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
 
 .clear{clear:left;}
 
