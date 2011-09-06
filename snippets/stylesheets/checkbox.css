@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+/* -----------------------------------------------------------
+
+- Title: Styling Checkboxes and Radio Buttons
+- Author: David Bohórquez (http://koombea.com)		
+
+----------------------------------------------------------- */
+
+/* Helpers
+============================================================ */
+.clearfix:after{ 
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden; 
+}
+.clearfix{display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+.clear{clear:left;}
+
+.floatleft{float:left !important;}
+.floatright{float:right !important;}
+.floatcenter{
+  float:none !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	overflow:hidden;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+/* Content
+============================================================ */
+#content{
+  padding:40px;
+  width:500px;
+}
+
+/* Forms
+============================================================ */
+.checkbox{
+  cursor:pointer;
+  float:left;
+}
+
+.checkbox input{display:none;}
+
+/* Inputs in IE won't respond if display:none, so we'll make them invisible */
+.ie8 .checkbox input{
+  display:inline;
+  filter:alpha(opacity=0);
+  width:0;
+}
+
+/* Styles for the checkbox */
+.checkbox span{
+  background:url(../images/buttons/checkbox.png) no-repeat 0 -56px;
+  display:inline-block;
+  height:26px;
+  line-height:26px;
+  padding-left:30px;
+}
+
+/* Styles for the checked checkbox */
+.checkbox input:checked + span{background-position:0 -85px;}
+
+/* Styles for radio buttons */
+.checkbox.radio span{background-position:0 0;}
+.checkbox.radio input:checked + span{background-position:0 -29px;}
+
+/* Separation between checkboxes */
+.checkbox + .checkbox{margin-left:10px;}
