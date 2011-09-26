@@ -1,0 +1,49 @@
+/* Base colorbox styles */
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999;}
+#cboxOverlay{position:fixed; width:100%; height:100%; overflow:hidden;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox{overflow:visible;}
+
+/* Hides default frame */
+#cboxTopLeft,
+#cboxTopRight,
+#cboxBottomLeft,
+#cboxBottomRight,
+#cboxMiddleLeft,
+#cboxMiddleRight,
+#cboxTopCenter,
+#cboxBottomCenter,
+#cboxTitle,
+#cboxCurrent,
+#cboxSlideshow,
+#cboxPrevious,
+#cboxNext{display:none;}
+#cboxError{padding:50px;}
+
+/* Custom styles */
+#cboxOverlay{background:url(/images/backgrounds/colorbox-overlay.png) repeat 0 0;}
+#cboxLoadingGraphic{background:url(/images/loading.gif) no-repeat center;}
+
+#cboxClose{
+  background:url(/images/icons/icn-close.png) no-repeat center;
+  cursor:pointer;
+  height:20px;
+  position:absolute;
+  right:10px;
+  top:10px;
+  width:20px;
+}
+
+#cboxContent{
+  background:#FFF;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  -moz-box-shadow: 0 0 11px #000;
+  -webkit-box-shadow: 0 0 11px #000;
+  box-shadow: 0 0 11px #000;
+}
