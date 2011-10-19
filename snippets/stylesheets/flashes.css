@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+/* -----------------------------------------------------------
+
+- Title: Styling for flashes (generic)
+- Author: Mauricio Mejia (http://koombea.com)		
+
+----------------------------------------------------------- */
+
+/* Helpers
+============================================================ */
+.clearfix:after{ 
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden; 
+}
+.clearfix{display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+.clear{clear:left;}
+
+.floatleft{float:left !important;}
+.floatright{float:right !important;}
+.floatcenter{
+  float:none !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	overflow:hidden;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+/* Content
+============================================================ */
+#content{
+  padding:40px;
+  width:500px;
+}
+
+/* Flashes for errors and notices
+====================================================*/
+.rounded{
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  
+}
+
+#error_explanation{
+  font-size:15px;
+  background-color:#ECC3C3;
+  border:solid #996B63 1px;
+  margin:10px 40px 10px 20px;
+  padding: 5px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#error_explanation h2{
+  padding:5px !important;
+  margin-bottom:8px;
+  text-shadow:0 1px rgba(255,255,255,1);
+}
+
+#error_explanation ul{
+  margin-left:20px;
+  list-style:disc;
+}
+
+#error_explanation ul li{
+  color:#333;
+  font-size:12px;
+  margin: 5px 0;
+  font-style:italic;
+}
+
+.flash{
+  padding: 5px 0;
+  position:relative;
+  margin:0 auto;
+  top:0px; 
+  height:30px;
+  width:800px;
+}
+
+.flash p{
+  color:#333;
+  display:inline-block;
+  font-size:14px;
+  line-height:17px;
+  margin: 7px 0px 5px 0px;
+  text-shadow:1px 2px rgba(255,255,255,0.4);
+}
+
+.holder{margin:0 5px;}
+
+.flash .icon{
+  background:url(../images/icons/icon-pallete.png) no-repeat scroll 0px 0px;
+  display:inline-block;
+  float:left;
+  margin:3px 3px 0 5px;
+  height:30px;
+  width:30px;
+}
+
+.flash .close-icon{
+  background:url(../images/icons/icon-pallete.png) no-repeat scroll -104px -6px;
+  display:inline-block;
+  float:right;
+  margin:7px 10px 0 5px;
+  height:16px;
+  width:16px;
+  position: absolute;
+  right: 0px;
+  top:6px;
+}
+
+.flash.notice{background-color:#DAEBDA;border:solid #7A8971 1px;}
+.flash.notice p{color:#486430;}
+.flash.notice .icon{background-position:-26px 0px;}
+
+.flash.alert{background-color:#ECC3C3;border:solid #996B63 1px;}
+.flash.alert p{color:#970000;}
+.flash.alert .icon{background-position:-65px 0px;}
+
+.flash.warning{background-color:#F7E8B8;border:solid #CABD95 1px;}
+.flash.warning p{color:#AE6900;}
+.flash.warning .icon{background-position:7px 0px;}
