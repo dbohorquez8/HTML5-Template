@@ -125,7 +125,7 @@
 
 .flash.notice{background-color:#DAEBDA;border:solid #7A8971 1px;}
 .flash.notice p{color:#486430;}
-.flash.notice .icon{background-position:-26px 0px;}
+.flash.notice .icon{background-position:-26px -2px;}
 
 .flash.alert{background-color:#ECC3C3;border:solid #996B63 1px;}
 .flash.alert p{color:#970000;}
