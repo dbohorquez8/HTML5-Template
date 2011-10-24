@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* Reset stylesheet and any additional stylesheets are imported here */
+@import url("reset.css");
+
+/* -----------------------------------------------------------
+
+- Title: Project X Main Stylesheet
+- Author: John Doe (http://koombea.com)
+- Designed by: John Doe (http://koombea.com)
+
+----------------------------------------------------------- */
+
+/* Helpers
+============================================================ */
+.clearfix:before,
+.clearfix:after{content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+.clear{clear:left;}
+
+.floatleft{float:left !important;}
+.floatright{float:right !important;}
+.floatcenter{
+  float:none !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	overflow:hidden;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+/* General
+============================================================ */
+body{
+
+}
+
+#wrapper{
+
+}
+
+p{
+  
+}
+
+a{
+	
+}
+
+a:hover{
+	
+}
+
+/* Header
+============================================================ */
+#header{
+  
+}
+
+/* Content
+============================================================ */
+#content{
+
+}
+
+
+/* Footer
+============================================================ */
+#footer{
+  
+}
+
+/* Forms
+============================================================ */
+
+
+/* Tables
+============================================================ */
+
+
+/* Buttons
+============================================================ */
+
+
+/* Icons
+============================================================ */
