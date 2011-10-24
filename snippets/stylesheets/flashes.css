@@ -113,6 +113,7 @@
 
 .flash .close-icon{
   background:url(../images/icons/icon-pallete.png) no-repeat scroll -104px -6px;
+  cursor:pointer;
   display:inline-block;
   float:right;
   margin:7px 10px 0 5px;
