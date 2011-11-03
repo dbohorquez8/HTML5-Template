@@ -1,5 +1,5 @@
-$(function(){
-  $('.close-icon').click(function(){
-     $('.flash').slideUp('slow');
-   });
+$(function (){
+  $('.flash .close').click(function (){
+    $(this).parent().slideUp(400);
+  });
 });
