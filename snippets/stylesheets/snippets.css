@@ -34,7 +34,7 @@
 /* General
 ============================================================ */
 body{
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #wrapper{
@@ -63,9 +63,6 @@ a:hover{
 }
 
 #logo{float:left;}
-#header nav{float:right;}
-#header nav li,
-#header nav a{display:inline-block;}
 
 /* Content
 ============================================================ */
@@ -127,3 +124,34 @@ label.checkbox input{margin-right:5px;}
 
 /* Buttons
 ============================================================ */
+.btn,
+.btn input,
+.btn span{
+  background:url(/images/buttons/btn.png) no-repeat 0 0;
+  cursor:pointer;
+  display:inline-block;
+  text-decoration:none;
+}
+
+.ie7 .btn,
+.ie7 .btn input{display:inline;}
+
+.btn{
+  padding-left:5px;
+}
+
+.btn span,
+.btn input{
+  background-position:100% 0;
+  color:#FFF;
+  font-size:14px;
+  line-height:1em;
+  padding:0 5px 0 0;
+}
+
+.btn:hover{background-position:0 -30px;}
+.btn:active{background-position:0 -60px;}
+.btn span:hover,
+.btn input:hover{background-position:100% -30px;}
+.btn span:active,
+.btn input:active{background-position:100% -60px;}

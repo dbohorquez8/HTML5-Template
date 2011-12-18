@@ -44,6 +44,26 @@
   width:500px;
 }
 
+/* Columns
+============================================================ */
+.column{
+  float:left;
+  margin-right:2%;
+  width:100%;
+}
+
+.column.last{margin-right:0;}
+
+.half{width:49%;}
+.third{width:32%;}
+.third.double{width:66%;}
+.fourth{width:23.5%;}
+.fourth.triple{width:74.5%;}
+.fifth{width:18.4%;}
+.fifth.double{width:38.8%;}
+.fifth.triple{width:59.2%;}
+.fifth.quadruple{width:79.6%;}
+
 /* Forms
 ============================================================ */
 /* General .text class for text inputs. The only necessary properties are box-sizing and width */
@@ -74,21 +94,4 @@ label{
 .checkbox span{vertical-align:middle;}
 .checkbox input{margin-right:5px;}
 
-.field{
-  float:left;
-  overflow:hidden;
-  margin:0 2% 15px 0;
-  width:100%;
-}
-
-.field.last{margin-right:0 !important;}
-.field .field{margin-bottom:0;}
-
-.half{width:49%;}
-.half .half{margin-right:4%; width:48%;}
-.third{width:32%;}
-.third.double{width:66%;}
-.fifth{width:18.4%;}
-.fifth.double{width:38.8%;}
-.fifth.triple{width:59.2%;}
-.fifth.quadruple{width:79.6%;}
+.field{margin-bottom:15px;}
