@@ -25,16 +25,17 @@
 #cboxError{padding:50px;}
 
 /* Custom styles */
-#cboxOverlay{background:url(/images/backgrounds/colorbox-overlay.png) repeat 0 0;}
-#cboxLoadingGraphic{background:url(/images/loading.gif) no-repeat center;}
+#cboxOverlay{background:url(../images/overlay.png) repeat 0 0;}
+#cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center;}
 
 #cboxClose{
-  background:url(/images/icons/icn-close.png) no-repeat center;
+  background:url(../images/close.png) no-repeat center;
   cursor:pointer;
   height:20px;
   position:absolute;
-  right:10px;
-  top:10px;
+  right:-10px;
+  text-indent:-9999px;
+  top:-10px;
   width:20px;
 }
 
@@ -46,4 +47,5 @@
   -moz-box-shadow: 0 0 11px #000;
   -webkit-box-shadow: 0 0 11px #000;
   box-shadow: 0 0 11px #000;
+  padding:20px;
 }
