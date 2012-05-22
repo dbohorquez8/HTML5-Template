@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'environment'
+require './environment'
 
 mime_type :ttf, "application/octet-stream"
 mime_type :woff, "application/octet-stream"
