@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+/* -----------------------------------------------------------
+
+- Title: Project E = mc^2 Main Stylesheet
+- Author: John Afferson (http://koombea.com)
+- Design by: John Afferson (http://koombea.com)
+
+----------------------------------------------------------- */
+
+/* Helpers
+============================================================ */
+.clearfix:before,
+.clearfix:after{content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1; overflow:visible !important;}
+
+.clear{clear:left;}
+
+.floatleft{float:left !important;}
+.floatright{float:right !important;}
+.floatcenter{
+  float:none !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  overflow:hidden;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+/* General
+============================================================ */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+
+}
+
+p{
+  line-height:1.2em;
+  margin-bottom:1em;
+}
+
+a{
+  -moz-transition:color 0.1s linear;
+  -webkit-transition:color 0.1s linear;
+  transition:color 0.1s linear;
+}
+
+a:hover{
+  
+}
+
+/* Header
+============================================================ */
+#header{
+  
+}
+
+#logo{float:left;}
+#header nav{float:right;}
+#header nav li,
+#header nav a{display:inline-block;}
+
+/* Content
+============================================================ */
+#content{
+
+}
+
+
+/* Footer
+============================================================ */
+#footer{
+  
+}
+
+/* Columns
+============================================================ */
+.column{
+  float:left;
+  margin-right:2%;
+  width:100%;
+}
+
+.column.last{margin-right:0;}
+
+.half{width:49%;}
+.third{width:32%;}
+.third.double{width:66%;}
+.fourth{width:23.5%;}
+.fourth.triple{width:74.5%;}
+.fifth{width:18.4%;}
+.fifth.double{width:38.8%;}
+.fifth.triple{width:59.2%;}
+.fifth.quadruple{width:79.6%;}
+
+/* Forms
+============================================================ */
+.field{margin-bottom:20px;}
+
+label{
+  display:block;
+  margin-bottom:10px;
+}
+
+label.inline{display:inline-block;}
+label.checkbox{cursor:pointer;}
+label.checkbox input,
+label.checkbox span{vertical-align:middle;}
+label.checkbox input{margin-right:5px;}
+
+.text{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  width:100%;
+}
+
+.ie7 .text{width:95%;}
+
+
+/* Buttons
+============================================================ */
