@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="no-js oldie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->  
+
+  <%= partial "_head" %>
+
+  <body>
+    <div id="wrapper">
+      <%= partial "_header" %>
+
+      <div id="content" class="clearfix">
+        <%= yield %>
+      </div><!-- #content -->
+    </div><!-- #wrapper -->
+    
+    <%= partial "_footer" %>
+  
+    <%= partial "_scripts" %>
+  </body>
+</html>
