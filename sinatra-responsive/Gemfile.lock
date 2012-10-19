@@ -1,0 +1,39 @@
+GIT
+  remote: git://github.com/darthniwo/sinatra-content-for.git
+  revision: 74e665e713726094b7f88e376e77a981784f9631
+  specs:
+    sinatra-content-for (0.2)
+      sinatra
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.0.3)
+    compass (0.10.6)
+      haml (>= 3.0.4)
+    compass-960-plugin (0.10.0)
+      compass (>= 0.10.0)
+    haml (3.0.24)
+    i18n (0.5.0)
+    rack (1.2.1)
+    rack-flash (0.1.1)
+      rack
+    sass (3.1.0.alpha.39)
+    sinatra (1.1.0)
+      rack (~> 1.1)
+      tilt (~> 1.1)
+    tilt (1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  compass
+  compass-960-plugin
+  haml
+  i18n
+  rack-flash
+  sass
+  sinatra
+  sinatra-content-for!
