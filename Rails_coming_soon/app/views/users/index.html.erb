@@ -1,0 +1,19 @@
+<% content_for :title do %>
+  Page Title
+<% end %>
+
+<h1>Coming soon</h1>
+
+<%= form_for @user, :url => new_path do |f| %>
+	<%= f.label :email %>
+	<%= f.text_field :email, :class => "text"%>
+	<%= f.submit 'Submit' %>
+<% end %>
+
+<% content_for :javascript do %>
+  <script>
+    $(function(){
+
+    });
+  </script>
+<% end %>

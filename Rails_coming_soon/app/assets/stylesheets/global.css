@@ -172,6 +172,7 @@ label.checkbox span{vertical-align:middle;}
 label.checkbox input{margin-right:5px;}
 
 .text{
+  border: solid #CCC 1px;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
