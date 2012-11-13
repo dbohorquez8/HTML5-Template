@@ -1,0 +1,12 @@
+%header#header
+  %h1.logo
+    %a{:href => "/"}
+      = image_tag 'logo.png', alt: ''
+  %nav
+    %ul
+      %li{:class => active_page("/")}
+        %a{:href => "/"} Home
+      %li{:class => active_page("/about")}
+        %a{:href => "/about"} About
+      %li{:class => active_page("/contact")}
+        %a{:href => "/contact"} Contact Us

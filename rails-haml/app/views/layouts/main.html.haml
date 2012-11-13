@@ -1,0 +1,15 @@
+!!! 5
+%html.no-js{:lang => "en", :class => browser}
+
+  = render :partial => "shared/head"
+
+  %body
+    #wrapper
+      =  render :partial => "shared/header"
+
+      #content.cf
+        = yield
+      
+    = render :partial => "shared/footer"
+    
+    =  render :partial => "shared/scripts"
