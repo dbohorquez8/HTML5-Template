@@ -1,0 +1,11 @@
+=== Rails Template for Markup
+
+!!! WARNING !!!
+
+Please include the favicon and the logo to avoid error while precompiling the assetst on the pipeline, if the application does not have an image logo, PLEASE REMOVE THE RUBY CODE image_path IN THAT LINE ON THE HEADER
+
+*Update on Oct 25, 2012
+  
+  - jQuery 1.8.2 on assets/javascripts
+  - Fixed some errors on rendering the yields
+  - 
