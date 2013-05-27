@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 {{ page.name }}-doc"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 {{ page.name }}-doc"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 {{ page.name }}-doc"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js {{ page.name }} no-ie"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]>  <![endif]-->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:url" content=""/>
+    <title> {{ page.title }} </title>
+    <meta name="description" content="" >
+    <link rel="shortcut icon" type="image/x-icon" href="/images/icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/icons/icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icons/icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icons/icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/icons/icon-x.png">
+    {% stylesheet app %}
+    <script type="text/javascript">{% asset vendor/modernizr %}</script>
+  </head>
+  <body>
+    <div id="wrapper">
+      {% include header.html %}
+      <div id="content" class="cf">
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+    {% javascript app %}
+    <!--[if IE 8]><!--> {% javascript vendor/selectivizr %} <!--<![endif]-->
+  </body>
+</html>

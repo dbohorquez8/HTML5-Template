@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/* -----------------------------------------------------------
+
+- Title: Project X Main Stylesheet
+- Author: John Doe (http://koombea.com)
+- Design by: John Doe (http://koombea.com)
+
+Based on Inuit.css (inuitcss.com)
+
+----------------------------------------------------------- */
+
+/* Reset
+============================================================ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}audio:not([controls]){display:none;}[hidden]{display:none;}html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}nav ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}ins{background-color:#ff9;color:#000;text-decoration:none;}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700;}del{text-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}input,textarea,select{font:inherit;}ul{list-style:none;}input:focus,textarea:focus,select:focus{outline: none;}textarea{resize:none;overflow:auto; vertical-align:top;}input,textarea{border:0 none; padding:0;margin:0;}img{border:0;-ms-interpolation-mode:bicubic;} button, input{line-height:normal;*overflow:visible;} button, html input[type="button"], input[type="reset"], input[type="submit"]{cursor:pointer; -webkit-appearance:button;}input[type="checkbox"], input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner, input::-moz-focus-inner{border:0;padding:0;}select{cursor:pointer;}
+
+/* Helpers
+============================================================ */
+.cf,
+.grids,
+.media{zoom:1;}
+.cf:before,
+.grids:before,
+.media:before,
+.cf:after,
+.grids:after,
+.media:after{content:""; display:table;}
+.cf:after,
+.grids:after,
+.media:after{clear:both;}
+
+.clear{clear:left;}
+
+.left{float:left !important;}
+.right{float:right !important;}
+.center{
+  float:none !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+.media{display:block;}
+.media .img{
+  float:left;
+  margin-right:10px;
+}
+.media .body{
+  overflow:hidden;
+  margin-bottom:0;
+}
+
+/* General
+============================================================ */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#wrapper{
+
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  line-height:1.4em;
+  margin-bottom:20px;
+  margin-bottom:1.5rem;
+}
+
+a{
+  text-decoration:none;
+  -moz-transition:color 0.1s linear;
+  -webkit-transition:color 0.1s linear;
+  transition:color 0.1s linear;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+img.left{margin:0 1.5em 0 0;}
+img.right{margin:0 0 0 1.5em;}
+
+/* Grid
+============================================================ */
+.wrapper{
+  max-width:950px;
+  margin:0 auto;
+  padding:0 5px;
+}
+
+.grids{
+  list-style:none;
+  clear:both;
+  margin:0 0 0 -1.042%;
+  max-width:960px;
+}
+
+[class^="grid-"]{
+  float:left;
+  margin:0 1.042% 0 0;
+}
+
+.grids [class^="grid-"]{margin:0 0 0 1.042%;}
+
+.grid-1{ width:3.125% }
+.grid-2{ width:7.292% }
+.grid-3{ width:11.458% }
+.grid-4{ width:15.625% }
+.grid-5{ width:19.792% }
+.grid-6{ width:23.958% }
+.grid-7{ width:28.125% }
+.grid-8{ width:32.292% }
+.grid-9{ width:36.458% }
+.grid-10{ width:40.625% }
+.grid-11{ width:44.792% }
+.grid-12{ width:48.958% }
+.grid-13{ width:53.125% }
+.grid-14{ width:57.292% }
+.grid-15{ width:61.458% }
+.grid-16{ width:65.625% }
+.grid-17{ width:69.792% }
+.grid-18{ width:73.958% }
+.grid-19{ width:78.125% }
+.grid-20{ width:82.292% }
+.grid-21{ width:86.458% }
+.grid-22{ width:90.625% }
+.grid-23{ width:94.792% }
+.grid-24{ width:98.958%; margin:0; }
+
+/* Header
+============================================================ */
+#header{
+  
+}
+
+#logo{float:left;}
+#header nav{float:right;}
+#header nav li,
+#header nav a{display:inline-block;}
+.ie7 #header nav a{display:inline;}
+
+/* Content
+============================================================ */
+#content{
+
+}
+
+
+/* Footer
+============================================================ */
+#footer{
+  
+}
+
+/* Forms
+============================================================ */
+.field{margin-bottom:20px;}
+
+label{
+  display:block;
+  margin-bottom:10px;
+}
+
+label.inline{display:inline-block;}
+.ie7 label.inline{display:inline;}
+label.checkbox{cursor:pointer;}
+label.checkbox input,
+label.checkbox span{vertical-align:middle;}
+label.checkbox input{margin-right:5px;}
+
+.text{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  width:100%;
+}
+
+.ie7 .text{width:95%;}
+
+
+/* Tablets
+============================================================ */
+@media (min-width: 721px) and (max-width: 960px){
+
+}
+
+/* Mobile
+============================================================ */
+@media (max-width: 720px){
+
+  .wrapper{width:auto;}
+
+  .grids{
+    margin:0;
+    width:auto;
+  }
+
+  [class^="grid-"],
+  .grids [class^="grid-"]{
+    float:none;
+    margin:0;
+    width:auto;
+  }
+
+  #logo{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  img.left,
+  img.right{max-width:50%; height:auto;}
+
+}
