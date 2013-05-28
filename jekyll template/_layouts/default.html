@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="no-js oldie ie7 {{ page.name }}" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js oldie ie8 {{ page.name }}" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js {{ page.name }}" lang="en"> <!--<![endif]-->
+  {% include head.html %}  
+  <body>
+    <div id="wrapper">
+      {% include header.html %}
+      <div id="content">
+        {{ content }}  
+      </div> <!-- end #content -->
+      {% include footer.html %}
+      {% include scripts.html %}
+    </div> <!-- end #wrapper -->
+  </body>
+</html>

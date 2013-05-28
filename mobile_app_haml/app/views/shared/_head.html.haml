@@ -1,0 +1,25 @@
+%head
+  %meta{:charset => "utf-8"}/
+  %title= yield :title
+  %meta{:content => "", :name => "description"}/
+  %meta{:content => "True", :name => "HandheldFriendly"}/
+  %meta{:content => "320", :name => "MobileOptimized"}/
+  %meta{:content => "user-scalable=no, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}/
+  %meta{:content => "on", "http-equiv" => "cleartype"}/
+  %link{:href => "/assets/images/touch/apple-touch-icon-144x144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
+  %link{:href => "/assets/images/touch/apple-touch-icon-114x114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
+  %link{:href => "/assets/images/touch/apple-touch-icon-72x72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
+  %link{:href => "/assets/images/touch/apple-touch-icon-57x57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
+  %link{:href => "/assets/images/touch/apple-touch-icon.png", :rel => "shortcut icon"}/
+  / Tile icon for Win8 (144x144 + tile color)
+  %meta{:content => "/assets/images/touch/apple-touch-icon-144x144-precomposed.png", :name => "msapplication-TileImage"}/
+  %meta{:content => "#222222", :name => "msapplication-TileColor"}/
+  / For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94
+  %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+  %meta{:content => "black", :name => "apple-mobile-web-app-status-bar-style"}/
+  %meta{:content => "", :name => "apple-mobile-web-app-title"}/
+  / This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026
+  /
+    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+  = stylesheet_link_tag "application"
+  = javascript_include_tag "vendor/modernizr-2.6.2.min.js"

@@ -1,0 +1,12 @@
+!!!
+/[if IEMobile 7 ] <html class="no-js iem7">
+/ [if (gt IEMobile 7)|!(IEMobile)]><!
+%html.no-js
+  / <![endif]
+  = render "/shared/head"
+  %body
+    / Add your site or application content here
+    = yield
+    = render "/shared/scripts"
+
+

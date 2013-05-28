@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'jekyll'
+# gem 'jekyll-haml'
+# gem 'haml'
+gem 'jekyll-asset-pipeline'
+gem 'yui-compressor'
