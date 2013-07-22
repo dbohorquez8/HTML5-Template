@@ -151,6 +151,34 @@ img{
 .push-fourfifth{margin-left: 79.57446808510639%;}
 .push-fivesixth{margin-left: 82.9787234042553%;}
 
+
+/* Splits
+------------------------------------------------------------*/
+.split .half,
+.split .third,
+.split .quarter,
+.split .fifth,
+.split .sixth,
+.split .twothird,
+.split .twofifth,
+.split .threefifth,
+.split .fourfifth,
+.split .fivesixth,
+.split .threequarter {
+  margin-left: 0;
+}
+.split .half{width: 50%;}
+.split .threequarter{width: 75%;}
+.split .quarter{width: 25%;}
+.split .third{width: 33.3%;}
+.split .twothird{width: 66.6%;}
+.split .fifth{width: 20%;}
+.split .twofifth{width: 40%;}
+.split .threefifth{width: 60%;}
+.split .fourfifth{width: 80%;}
+.split .sixth{width: 16.6%;}
+.split .fivesixth{width: 83.4%;}
+
 /* Header
 ============================================================ */
 #header{
