@@ -1,0 +1,90 @@
+- content_for :title do 
+  Typography - Koombea CSS Framework
+
+%h1 Typography
+
+%h2 Headings
+
+%h1 Heading 1 (h1)
+%h2 Heading 2 (h2)
+%h3 Heading 3 (h3)
+%h4 Heading 4 (h4)
+%h5 Heading 5 (h5)
+%h6 Heading 6 (h6)
+
+%h2 Paragraphs
+
+%p Bacon ipsum dolor sit amet shank venison turducken, andouille doner hamburger t-bone ribeye brisket short loin. Flank frankfurter fatback tail beef ribs. Chuck drumstick sirloin leberkas hamburger beef ribs pig. Bacon ham hock doner brisket shoulder beef tail turducken strip steak. Cow meatloaf ham hock tongue pork, turducken leberkas ground round brisket pastrami rump pork loin.
+
+%h2 Font Sizes
+
+.grid
+  .grid__item.one-half>
+    %p.alpha Alpha
+
+  .grid__item.one-half>
+    %p
+      %code
+        = html_escape('<p class="alpha">...</p>')
+
+.grid
+  .grid__item.one-half>
+    %p.beta Beta
+
+  .grid__item.one-half>
+    %p
+      %code
+        = html_escape('<p class="beta">...</p>')    
+
+.grid
+  .grid__item.one-half>
+    %p.gamma Gamma
+
+  .grid__item.one-half>
+    %p
+      %code
+        = html_escape('<p class="gamma">...</p>')
+
+.grid
+  .grid__item.one-half>
+    %p.delta Delta
+
+  .grid__item.one-half>
+    %p
+      %code
+        = html_escape('<p class="delta">...</p>')
+
+.grid
+  .grid__item.one-half>
+    %p.epsilon Epsilon
+
+  .grid__item.one-half>
+    %p
+      %code
+        = html_escape('<p class="epsilon">...</p>')
+
+.grid
+  .grid__item.one-half>
+    %p.zeta Zeta
+
+  .grid__item.one-half>
+    %p
+      %code
+        = html_escape('<p class="zeta">...</p>')
+
+%h2 Alignment
+
+%p.text--left Left aligned text
+%p.text--center Centered text
+%p.text--right Right aligned text
+
+%p
+  %code
+    = html_escape('<p class="text--left">Left aligned text</p>')
+%p
+  %code
+    = html_escape('<p class="text--center">Centered text</p>')
+%p
+  %code
+    = html_escape('<p class="text--right">Right aligned text</p>')
+

@@ -1,0 +1,32 @@
+button::-moz-focus-inner,
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin-top:-2px;
+  margin-bottom: -2px;
+}
+
+.button{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.button--block{display: block;}
+
+.button--default{
+  
+}
+
+// .button--primary{}
+// .button--link{}
+// .button--success{}
+// .button--warning{}
+// .button--danger{}
+// .button--disabled{}
+
+// .button--tiny{}
+// .button--small{}
+// .button--large{}
+// .button--huge{}

@@ -1,0 +1,15 @@
+.text-input{
+  @if $global-border-box == false{
+    @include box-sizing(border-box);
+  }
+}
+
+.form-field{
+  @extend %margin-bottom;
+}
+
+.label{
+  cursor: pointer;
+  display: block;
+  @extend %margin-bottom;
+}

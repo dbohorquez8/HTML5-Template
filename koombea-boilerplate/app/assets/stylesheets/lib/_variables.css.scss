@@ -1,0 +1,22 @@
+/* Variables
+================================== */
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$base-spacing-unit: 20px;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+$responsive: true;
+$responsive-extra: false;
+
+$global-border-box: false;
+$use-grids: true !default;
+$wrapper-width: 940px;
+$wrapper-gutter: 10px;
+
+$lap-start: 481px!default;
+$palm-end: $lap-start - 1px;
+$desk-start: 1024px!default;
+$lap-end: $desk-start - 1px;
+$desk-wide-start: 1200px!default;

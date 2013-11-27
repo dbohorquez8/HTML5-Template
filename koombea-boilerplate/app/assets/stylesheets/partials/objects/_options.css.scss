@@ -1,0 +1,22 @@
+.option-input{
+
+  input,
+  .option-input__label{ vertical-align: middle;}
+}
+
+.custom-input{
+
+  input{
+    @include accessibility;
+  }
+
+  .custom-input__skin{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .custom-input__label{
+    vertical-align: middle;
+  }
+}

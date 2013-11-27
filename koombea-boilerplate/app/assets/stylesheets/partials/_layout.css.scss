@@ -1,0 +1,6 @@
+.wrapper{
+  @extend .cf;
+  margin: auto;
+  padding: 0 $wrapper-gutter;
+  max-width: $wrapper-width;
+}
